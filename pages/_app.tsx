@@ -1,14 +1,13 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
-import { useState, useCallback } from 'react';
+import { Navbar } from '../pages/styling-components/Navbar' 
 
 function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <>
-      <div>
-        hi
-      </div>
+      <Navbar />
+      <Component {...pageProps} />
     </>
   )
 }
